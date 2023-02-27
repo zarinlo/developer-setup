@@ -26,10 +26,10 @@
 - [Chrome Browser](https://www.google.com/chrome/)
     - [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=en) - allows you to quickly close out your tabs, categorize them into lists, and reopen them at a later time, saving you a lot of memory
     - [Momentum](https://momentumdash.com/) - personal touch to new Chrome tabs
-    - [JSON Viewer]()
-    - [uBlock Origin]()
-    - [Encoder / Decoder]()
-    - [Eye Dropper]()
+    - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US)
+    - [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en)
+    - [Encoder / Decoder](https://chrome.google.com/webstore/detail/encoder-decoder/mjcdbmdlmjbjmpenpepgcpnmapclkaah?hl=en)
+    - [Eye Dropper](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en)
 - [Brave Browser](https://brave.com/download/) - No ads
 - [Sublime](https://www.sublimetext.com/) - Text Editor 
     - Install package control > material theme > set theme
