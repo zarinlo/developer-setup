@@ -3,9 +3,10 @@
 - [Terminal Utilities](#terminal-utilities)
 - [Educational Links](#educational-links)
 - [Apps](#apps)
-- [MacOS Specific Apps](#macos-specific-apps)
 - [IDEs](#ides)
-
+- [Tools](#tools)
+- [MacOS Specific Apps](#macos-specific-apps)
+- [MacOS Local Dev Setup](#macos-local-dev-setup)
 
 ## Terminal Utilities
 
@@ -38,6 +39,15 @@
 - [Postman](https://www.postman.com/) - REST API Client
 - [Docker](https://www.docker.com/products/docker-desktop/) - Container deployment
 
+## IDEs
+
+- [IntelliJ](https://www.jetbrains.com/idea/) - Ultimate Edition
+- [VS Code](https://code.visualstudio.com/)
+
+## Tools
+
+- [Create UML diagrams, mindmaps, tree diagrams, flowcharts, network diagrams](https://www.diagrams.net/)
+
 ## MacOS Specific Apps
 
 - [Albert](https://www.alfredapp.com/) - Better version of Spotlight
@@ -51,7 +61,63 @@
 - [CopyClip](https://apps.apple.com/us/app/copyclip-clipboard-history/id595191960?mt=12) - Manage clipboard
 - [KeepingYouAwake](https://keepingyouawake.app/) - Prevents your Mac from going to sleep 
 
-## IDEs
+## MacOS Local Dev Setup
 
-- [IntelliJ](https://www.jetbrains.com/idea/) - Ultimate Edition
-- [VS Code](https://code.visualstudio.com/)
+```
+# install homebrew
+xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# install tools via brew
+- brew install
+    - git
+        - setup .gitconfig --> git config --global --edit
+            [user]
+            name = Zarin Lokhandwala
+            email = zelok786@gmail.com
+    - maven
+    - wget
+    - java
+        - https://johnathangilday.com/blog/macos-homebrew-openjdk/
+            - export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+            - path+=$JAVA_HOME/bin
+        - https://gist.github.com/gwpantazes/50810d5635fc2e053ad117b39b597a14
+    - python@3.10
+        - export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+	    - install virtualenv
+            - /usr/local/opt/python@3.10/bin/pip3 install virtualenv
+	    - how to use venv
+            - https://gist.github.com/pandafulmanda/730a9355e088a9970b18275cb9eadef3
+
+# install mongodb
+- https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
+- create alias
+    - brew services start mongodb/brew/mongodb-community
+
+# install zsh 
+- https://ohmyz.sh/#install
+- change shell if need be
+    - chsh -s $(which zsh)
+- use powerlevel10k
+    - https://www.linkedin.com/pulse/5min-guide-awesome-terminal-rafa-oliveira/
+	    - git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+	    - ZSH_THEME="powerlevel10k/powerlevel10k"
+
+- plugins for zsh
+    -  https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md	
+        plugins=(
+            git sublime vscode jsontools 
+        )	
+
+# setup SSH keys
+- https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+# setup golang 
+- https://jimkang.medium.com/install-go-on-mac-with-homebrew-5fa421fc55f5
+- brew install golang
+    - mkdir -p $HOME/go/{bin,src,pkg}
+    - in .zshrc add:
+        export GOPATH=$HOME/go
+        export GOROOT="$(brew --prefix golang)/libexec"
+        export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+```
