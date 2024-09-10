@@ -10,7 +10,6 @@
 
 ## Terminal Utilities
 
-- [Bashrc Generator](http://bashrcgenerator.com/) - Generate your .bashrc/PS1 bash prompt easily with a drag and drop interface.
 - [Doitlive](https://github.com/sloria/doitlive) - Tool reads a file of shell commands and replays them in a fake terminal session for live presentations.
 - [GoAccess](https://github.com/allinurl/goaccess) - Real-time web log analyzer that provides HTTP statistics for servers via terminal and browser for *nix systems. 
 - [The Fuck](https://github.com/nvbn/thefuck) - Corrects errors in previous console commands.
@@ -27,7 +26,7 @@
 - [Chrome Browser](https://www.google.com/chrome/)
     - [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=en) - allows you to quickly close out your tabs, categorize them into lists, and reopen them at a later time, saving you a lot of memory
     - [Momentum](https://momentumdash.com/) - personal touch to new Chrome tabs
-    - [JSON Viewer](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US)
+    - [JSON Viewer Pro](https://chromewebstore.google.com/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc?hl=en-US)
     - [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en)
     - [Encoder / Decoder](https://chrome.google.com/webstore/detail/encoder-decoder/mjcdbmdlmjbjmpenpepgcpnmapclkaah?hl=en)
     - [Eye Dropper](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka?hl=en)
@@ -59,6 +58,7 @@
 - [Gifski](https://apps.apple.com/us/app/gifski/id1351639930?mt=12) - Convert videos to gifs 
 - [Spectacle](https://www.spectacleapp.com/) - Move and resize windows
 - [CopyClip](https://apps.apple.com/us/app/copyclip-clipboard-history/id595191960?mt=12) - Manage clipboard
+- [Jumpcut](https://snark.github.io/jumpcut/) - Alternative to CopyClip (`brew install --cask jumpcut`)
 - [KeepingYouAwake](https://keepingyouawake.app/) - Prevents your Mac from going to sleep 
 
 ## MacOS Local Dev Setup
@@ -88,6 +88,8 @@ xcode-select --install
             - /usr/local/opt/python@3.10/bin/pip3 install virtualenv
 	    - how to use venv
             - https://gist.github.com/pandafulmanda/730a9355e088a9970b18275cb9eadef3
+    - starship 
+        - https://starship.rs/
 
 # install mongodb
 - https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
@@ -102,7 +104,8 @@ xcode-select --install
     - https://www.linkedin.com/pulse/5min-guide-awesome-terminal-rafa-oliveira/
 	    - git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 	    - ZSH_THEME="powerlevel10k/powerlevel10k"
-
+- set terminal theme
+    - https://github.com/lysyi3m/macos-terminal-themes
 - plugins for zsh
     -  https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md	
         plugins=(
